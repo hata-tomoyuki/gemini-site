@@ -4,6 +4,7 @@ import BokehBackground from './components/BokehBackground';
 import Snowfall from './components/Snowfall';
 import Section from './components/Section';
 import { ILLUMINATION_PALETTE } from './constants';
+import christmasImage from './assets/images/christmas.jpg';
 
 const App: React.FC = () => {
   return (
@@ -63,11 +64,11 @@ const App: React.FC = () => {
             <h2 className="font-elegant text-3xl mb-16 text-center tracking-widest uppercase opacity-60">Palette of Celebration</h2>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               {ILLUMINATION_PALETTE.map((color, idx) => (
-                <div 
-                  key={color.name} 
+                <div
+                  key={color.name}
                   className="group flex flex-col items-center text-center p-8 rounded-xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-500"
                 >
-                  <div 
+                  <div
                     className="w-16 h-16 rounded-full mb-6 blur-[8px] animate-breath"
                     style={{ backgroundColor: color.hex, boxShadow: `0 0 20px ${color.hex}` }}
                   ></div>
@@ -84,9 +85,9 @@ const App: React.FC = () => {
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
                 <div className="flex-1 relative">
                     <div className="absolute -inset-4 bg-gradient-to-tr from-sapphire-700/20 to-emerald-500/20 blur-3xl rounded-full"></div>
-                    <img 
-                        src="https://picsum.photos/id/401/800/1000" 
-                        alt="Night Illumination" 
+                    <img
+                        src={christmasImage}
+                        alt="Night Illumination"
                         className="relative w-full aspect-[4/5] object-cover rounded-sm grayscale-[0.3] brightness-[0.7] border border-white/10"
                     />
                 </div>
