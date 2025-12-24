@@ -116,13 +116,13 @@ const App: React.FC = () => {
               光の演出とともに、あなたの訪れをお待ちしております。
             </p>
             <div className="flex justify-center">
-              <button className="group relative px-12 py-5 overflow-hidden transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#d4af37]/40 via-[#f1dada]/40 to-[#d4af37]/40 opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                <div className="absolute inset-px bg-slate-950 flex items-center justify-center">
-                   <span className="relative font-elegant tracking-[0.3em] text-white/90 group-hover:text-white transition-colors">
-                     BOOK YOUR NIGHT
-                   </span>
-                </div>
+              <button
+                type="button"
+                className="w-full group inline-flex rounded-md bg-gradient-to-r from-[#d4af37]/40 via-[#f1dada]/40 to-[#d4af37]/40 p-px transition-all duration-300 hover:from-[#d4af37]/70 hover:via-[#f1dada]/70 hover:to-[#d4af37]/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1dada]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+              >
+                <span className="w-full inline-flex items-center justify-center rounded-md bg-slate-950 px-12 py-5 font-elegant text-sm uppercase tracking-[0.3em] text-white/90 transition-transform duration-300 group-hover:scale-[1]">
+                  BOOK YOUR NIGHT
+                </span>
               </button>
             </div>
           </div>
