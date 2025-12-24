@@ -131,10 +131,10 @@ const App: React.FC = () => {
         {/* Footer */}
         <footer className="py-16 px-8 text-center border-t border-white/5">
             <div className="mb-8 font-elegant text-xl tracking-[0.5em] text-white/30">
-                CHRISTMAS EVE 2024
+                CHRISTMAS EVE 2025
             </div>
             <p className="text-[10px] tracking-[0.2em] text-white/20 uppercase">
-                &copy; 2024 Colors of Light. All rights reserved.
+                &copy; 2025 Colors of Light. All rights reserved.
             </p>
         </footer>
       </main>
